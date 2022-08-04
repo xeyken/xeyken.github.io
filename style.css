@@ -62,11 +62,18 @@ a.rainbow:hover::before {
   box-shadow: 0 20px 25px -20px rgba(0,0,0,0.7);
   width: fit-content;
 }
-pre {
+pre.H{
   display: block;
   font-family: monospace;
   white-space: pre;
   width: 275px;
+  margin: 1em 0px;
+}
+pre.F{
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  width: 520px;
   margin: 1em 0px;
 }
 .code-title {
