@@ -176,6 +176,124 @@ pre.F{
   background: #fefefe;
   border-color: #000000;
 }
-p{
+p.indent{
   text-indent: 40px;
+  color: var(--grayishBlue);
+}
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+.box p {
+  color: var(--grayishBlue);
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 20px;  
+}
+
+img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+  .box {
+      height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+.cyan {
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  border-top: 3px solid var(--red);
+}
+.blue {
+  border-top: 3px solid var(--blue);
+}
+
+h2 {
+  color: #000;
+  font-weight: var(--weight3);
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .box {
+      width: 20%;
+   
+  }
+  .header p {
+      width: 30%;
+  }
+  
+}
+
+.borderMenu{   
+  position: relative;
+  border: 3px solid black; 
+  width: 102%;
+  left: -3px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.menu{
+  text-align: center;
+  display: flex;
+  width: 102%;
+  height: 30px;
+  justify-content: space-evenly;
+  padding-inline-start: 0px;
+}
+.menu li{
+  list-style: none;
+  float: left;
+  text-align: center;
+  height: fit-content;
+  padding-top: 4px;
+  position: relative;
+  font-size: large;
+  transition: transform 0.5s ease-in-out 0s;
+}
+.menu li:hover, a{
+  transform: rotate(360deg);
+}
+.menu li a{
+  text-decoration: none;
+  color: #000;
+}
+.vl{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  float: left;
+  height: 66px;
+  position: relative;
+  top: -17px;
 }
