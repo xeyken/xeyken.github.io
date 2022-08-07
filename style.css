@@ -67,7 +67,10 @@ pre.H{
   font-family: monospace;
   white-space: pre;
   width: 275px;
-  margin: 1em 0px;
+  margin: 0px 0px;
+}
+.big_div > * {
+  margin: 25px 50px 50px 50px;
 }
 pre.F{
   display: block;
